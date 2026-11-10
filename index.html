@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="help">
+    <div class="main_container">
+      <section class="logo_main">
+        <div class="LOGO">
+          <img src="images/logo.svg" alt="logo">
+        </div>
+      </section>
+      <section class="container">
+        <section class="calculator">
+          <br>
+          <p>Bill</p>
+          <div class="value">
+            <div class="image">
+              <img src="images/icon-dollar.svg" alt="icon_dollar">
+            </div>
+            <label type="number">
+              <input type="number" class="bill">
+            </label>
+          </div>
+          <br>
+          <p>Select Tip %</p>
+          <div class="Tips">
+            <button type="button">5%</button>
+            <button type="button">10%</button>
+            <button type="button">15%</button>
+            <button type="button">25%</button>
+            <button type="button">50%</button>
+            <button type="button" class="customBtn_main">
+              <input type="number" placeholder="Custom" id="customBtn">
+            </button>
+          </div>
+          <br>
+          <div class="num_of_people_input">
+            <p>Number of People</p>
+            <p class="ifZero"></p>
+          </div>
+          <div class="value2">
+            <div class="image">
+              <img src="images/icon-person.svg" alt="icon_people">
+            </div>
+            <label type="number">
+              <input type="number" class="numPeople">
+            </label>
+          </div>
+        </section>
+        <section class="display_main">
+          <div class="display">
+            <br><br>
+            <div class="price">
+              <div class="info">
+                <p>Tip Amount</p>
+                <p class="person">/ person</p>
+              </div>
+              <div class="tipAmt">
+                <h1></h1>
+              </div>
+            </div> <br>
+            <div class="price">
+              <div class="info">
+                <p>Total</p>
+                <p class="person">/ person</p>
+              </div>
+              <div class="totalAmt">
+                <h1></h1>
+              </div>
+            </div> <br><br><br><br>
+            <a href="index.html"><button type="button" class="reset">RESET</button></a>
+          </div>
+        </section>
+      </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
